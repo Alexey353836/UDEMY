@@ -234,4 +234,37 @@
 //   str = str + i;
 // }
 
-console.log(str);
+// console.log(str);
+
+
+
+//Coding Exercise 3: Задания на использование циклов и услови
+
+function fourthTask() {
+    // Пишем решение вот тут
+    let i = 2;
+    while(i <= 16){
+        if (i % 2 ===0){
+            i++;
+            continue;
+        }else {
+            console.log(i);
+        }
+         i++;
+    }
+}
+fourthTask();
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    // Пишем решение вот тут
+    for (let i = 5; i < 11; i++){
+        arrayOfNumbers[i - 5] = i;
+    }
+    console.log(arrayOfNumbers);
+    
+    // Не трогаем
+    return arrayOfNumbers;
+}
+fifthTask();
