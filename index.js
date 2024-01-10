@@ -240,31 +240,24 @@
 
 //Coding Exercise 3: Задания на использование циклов и услови
 
-function fourthTask() {
-    // Пишем решение вот тут
-    let i = 2;
-    while(i <= 16){
-        if (i % 2 ===0){
-            i++;
-            continue;
-        }else {
-            console.log(i);
-        }
-         i++;
-    }
-}
-fourthTask();
+// let result = '';
+// const lenght = 10;
 
-function fifthTask() {
-    const arrayOfNumbers = [];
+// for (let i = 1; i < lenght; i++){
+// 	for (let j = 0; j < i; j++){
+// 		result += '*';
+// 	}
+// 	result += '\n';
+// }
+// console.log(result);
 
-    // Пишем решение вот тут
-    for (let i = 5; i < 11; i++){
-        arrayOfNumbers[i - 5] = i;
-    }
-    console.log(arrayOfNumbers);
-    
-    // Не трогаем
-    return arrayOfNumbers;
+elya: for ( let i = 0; i < 3; i++){
+	console.log(`First level : ${i}`);
+	for (let j = 0; j < 3; j++){
+		console.log(`Second Level: ${j}`);
+		for (let k = 0; k < 5; k++){
+			if(k === 3)break elya;
+			console.log(`Third Level: ${k}`);
+		}
+	}
 }
-fifthTask();
