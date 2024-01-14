@@ -298,3 +298,43 @@
 
 // console.log(result)
 
+
+
+
+// Lesson 25 Функции стрелочные
+
+// let num = 20;
+// function ret() {
+// 	let num = 50;
+	
+// 	return num;
+// }
+// const anotherNum = ret();
+// console.log(anotherNum);
+// console.log(num);
+
+// let logger = function(){
+// 	console.log('Hello');
+// };
+// logger();
+
+// const calc = (a, b) => a + b;
+// const calcTwo= (a, b) => {
+// 	console.log('1');
+// 	return a + b;
+// };
+// console.log(calc(2, 2));
+// console.log(calcTwo(5, 5));
+
+
+
+// Lesson 26  Ещё паз про аргументы функций. Валюты.
+
+const usaCurs = 28;
+const eurCurs = 32;
+
+function convert (amount, curs) {
+	console.log(curs * amount);
+}
+convert(500, usaCurs);
+convert(600 , eurCurs);
