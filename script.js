@@ -39,23 +39,37 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-const  numberOfFils =  +prompt('Сколько фильмов вы уже посмотрели?','');
-
-const personalMovieDB = {
-	count:numberOfFils,
-	muvies:{},
-	actors:{},
-	genres:[],
-	privat: false
-};
-
-const a = prompt('Один из последних просмотренных фильмов', ''),
-	b = prompt('На сколько оцените его?', ''),
-	c = prompt('Один из последних просмотренных фильмов', ''),
-	d = prompt('На сколько оцените его?', '');
-
-personalMovieDB.muvies[a] = b;
-personalMovieDB.muvies[c] = d; 
+// const  numberOfFils =  +prompt('Сколько фильмов вы уже посмотрели?','');
 
 
-console.log(personalMovieDB);
+// const personalMovieDB = {
+// 	count:numberOfFils,
+// 	muvies:{},
+// 	actors:{},
+// 	genres:[],
+// 	privat: false
+// };
+
+// for (let i = 0; i < 2; i++){
+// 	const a = prompt('Один из последних просмотренных фильмов', ''),
+// 	b = prompt('На сколько оцените его?', '');
+
+// 	if (a != null && b != null & a != '' && b != '' && a.length < 50) {
+// 		personalMovieDB.muvies[a] = b;
+// 		console.log('done');
+// 	} else {
+// 		console.log('error');
+// 		i--;
+// 	}
+// }
+
+// if ( personalMovieDB.count < 10){
+// 	console.log('Вы посмотрели довольно мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+// 	console.log('Вы класный зритель');
+// } else if (personalMovieDB.count >= 30){
+// 	console.log('Вы киноман');
+// }else {
+// 	console.log('Произошла ошибка');
+// }
+// console.log(personalMovieDB);
