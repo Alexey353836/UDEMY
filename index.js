@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 'use strict';
 
 // Lesson 20  Условия
@@ -330,11 +331,44 @@
 
 // Lesson 26  Ещё паз про аргументы функций. Валюты.
 
-const usaCurs = 28;
-const eurCurs = 32;
+// const usaCurs = 28;
+// const eurCurs = 32;
 
-function convert (amount, curs) {
-	console.log(curs * amount);
+// function convert (amount, curs) {
+// 	console.log(curs * amount);
+// }
+// convert(500, usaCurs);
+// convert(600 , eurCurs);
+
+
+
+// lesson 27 Про важность return
+
+// const  usdCur = 28;
+// const discount = 0.9;
+
+// function convent (amount, curr){
+// 	return curr * amount;
+// }
+
+// function promotion(result) {
+// 	console.log(result * discount);
+// }
+// const res = convent(500, usdCur);
+// promotion(res);
+
+
+
+// Coding Execise 6. Задание на работу в функциями.
+
+function sayHello(user) {
+	return `Привет, ${user}!`;
+	// console.log(`Привет, ${user}!`);
 }
-convert(500, usaCurs);
-convert(600 , eurCurs);
+sayHello('Антон');
+
+function returnNeighboringNumbers(num) {
+	 return [num - 1, num, num + 1];
+	//  console.log([num - 1, num, num + 1]); 
+}
+returnNeighboringNumbers(5);
