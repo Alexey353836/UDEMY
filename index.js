@@ -361,14 +361,62 @@
 
 // Coding Execise 6. Задание на работу в функциями.
 
-function sayHello(user) {
-	return `Привет, ${user}!`;
-	// console.log(`Привет, ${user}!`);
-}
-sayHello('Антон');
+// function sayHello(user) {
+// 	return `Привет, ${user}!`;
+// 	// console.log(`Привет, ${user}!`);
+// }
+// sayHello('Антон');
 
-function returnNeighboringNumbers(num) {
-	 return [num - 1, num, num + 1];
-	//  console.log([num - 1, num, num + 1]); 
-}
-returnNeighboringNumbers(5);
+// function returnNeighboringNumbers(num) {
+// 	 return [num - 1, num, num + 1];
+// 	//  console.log([num - 1, num, num + 1]); 
+// }
+// returnNeighboringNumbers(5);
+
+// function getMathResult(num, times) {
+// 	if (typeof(times) !== 'number' || times <= 0) {
+// 		return num;
+// 	}
+
+// 	let str = '';
+
+// 	for (let i = 1; i <= times; i++) {
+// 		if (i === times) {
+// 			str += `${num * i}`;
+// 		} else {
+// 			str += `${num * i}---`;
+// 		}
+// 	}
+
+// 	return str;
+// }
+
+// getMathResult(10, 5);
+
+
+
+// lesson 28 Mетоды и свойства строк и чисел
+
+// const str = 'tEst';
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
+
+// const fruit = 'Some fruit';
+// console.log(fruit.indexOf('fruit'));
+// console.log(fruit.indexOf('q'));
+
+// const logg = 'Hello world';
+// console.log(logg.slice(6, 11));
+// console.log(logg.slice(2));
+// console.log(logg.slice(-7, -1));
+// console.log(logg.substring(6, 11));
+// console.log(logg.substr(6, 5));
+
+// Math Библиотека методов чисел в консоли
+// const num = 12.2;
+// console.log(Math.round(num));
+
+const test = '12.2px';
+console.log(parseInt(test));
+console.log(parseFloat(test));
