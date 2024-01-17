@@ -30,10 +30,59 @@
 // 	console.log(i);
 // }
 
+
+
 // for (let i = 20; i >= 10; i--){
 // 	console.log(i);
 // 	if(i == 13){
 // 		break;
 // 	}
 // }
+
+
+
+// for (let i = 1; i <= 10; i++){
+//     if (i % 2 !== 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+// let i = 0;
+// while(i <= 16){
+//     i++;
+//     if(i % 2 == 0){
+//         continue;
+//     }else {
+//         console.log(i);
+//     }
+// }
+
+// let i = 0;
+// while(i <= 16){
+//     i++;
+//     if(i % 2 !== 0){
+//         console.log(i);
+//     }
+// }
+
+
+
+// Execise-4. Продвинутые задания на использование цыклов и условий.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
