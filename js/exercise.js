@@ -83,20 +83,27 @@
 // firstTask();
 
 // 2.
-function secondTask(){
-	const data = [5, 10, 'Shopping', 28, 'Homework'];
-	for (let i = 0; i < data.length; i++){
-		if(typeof(data[i]) === 'number'){
-			data[i] = data[i] * 2;
-		}else if(typeof(data[i]) === 'string'){
-			data[i] = `${data[i]} - done`; 
-		}
-	}
-	console.log(data);
-	return data;
-}
-secondTask();
+// function secondTask(){
+// 	const data = [5, 10, 'Shopping', 28, 'Homework'];
+// 	for (let i = 0; i <= data.length; i++){
+// 		if (typeof(data[i]) === 'number'){
+// 			data[i] = data[i] * 2;
+// 		}else if (typeof(data[i]) === 'string'){
+// 			data[i] = `${data[i]} - dane`;
+// 		}
+// 	}
+// 	console.log(data);
+// 	return data;
+// }
+// secondTask();
 
+// 3.
+function thirdTask(){
+	const data = [5, 10, 'Shopping', 28, 'Homework'];
+	const result = [];
+
+}
+thirdTask();
 
 
 
