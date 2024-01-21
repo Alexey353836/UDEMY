@@ -423,3 +423,27 @@
 
 
 
+// Lesson 31 Callback функции
+
+function first (){
+	setTimeout(function() {
+		console.log(1);
+	},500);
+}
+
+function second (){
+	console.log(2);
+}
+
+first ();
+second ();
+
+function lernJS (lang, calback){
+	console.log(`I lern ${lang}`);
+	calback();
+}
+
+function dane(){
+	console.log('YES');
+}
+lernJS('Java Script', dane);
