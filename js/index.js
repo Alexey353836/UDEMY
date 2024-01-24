@@ -453,22 +453,22 @@
 
 // lesson - 32 Обьекты, деструкуризация обьектов.
 
-const options = {
-	name: 'test',
-	with: 1024,
-	height: 1024,
-	colors: {
-		border: 'black',
-		bg: 'red'
-	},
-	makeTest: function(){
-		console.log('Test');
-	}
-};
-options.makeTest();
+// const options = {
+// 	name: 'test',
+// 	with: 1024,
+// 	height: 1024,
+// 	colors: {
+// 		border: 'black',
+// 		bg: 'red'
+// 	},
+// 	makeTest: function(){
+// 		console.log('Test');
+// 	}
+// };
+// options.makeTest();
 
-const {border, br} = options.colors;
-console.log(border);
+// const {border, br} = options.colors;
+// console.log(border);
 
 // console.log(Object.keys(options));
 // console.log(Object.keys(options).length);
@@ -492,3 +492,33 @@ console.log(border);
 // }
 // console.log(counter);
 
+
+
+
+// :esson 33 Масивы и псевдомасивы
+
+const arr = [1, 6, 22, 36, 8];
+// arr.sort();
+arr.sort(compareNum);
+console.log(arr);
+function compareNum(a, b){
+	return a - b;
+}
+
+// arr.pop();
+// arr.push(10);
+// console.log(arr);
+
+// for (let value of arr){
+// 	console.log(value);
+// }
+
+// arr.forEach(function(item, i, arr) {
+// 	console.log(`${i}: ${item} внутри масива ${arr}`);
+// });
+
+const str = prompt('', '');
+const products = str.split(',');
+// console.log(products);
+products.sort();
+console.log(products.join(';'));
