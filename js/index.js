@@ -497,13 +497,13 @@
 
 // :esson 33 Масивы и псевдомасивы
 
-const arr = [1, 6, 22, 36, 8];
-// arr.sort();
-arr.sort(compareNum);
-console.log(arr);
-function compareNum(a, b){
-	return a - b;
-}
+// const arr = [1, 6, 22, 36, 8];
+// // arr.sort();
+// arr.sort(compareNum);
+// console.log(arr);
+// function compareNum(a, b){
+// 	return a - b;
+// }
 
 // arr.pop();
 // arr.push(10);
@@ -517,8 +517,106 @@ function compareNum(a, b){
 // 	console.log(`${i}: ${item} внутри масива ${arr}`);
 // });
 
-const str = prompt('', '');
-const products = str.split(',');
+// const str = prompt('', '');
+// const products = str.split(',');
 // console.log(products);
-products.sort();
-console.log(products.join(';'));
+// products.sort();
+// console.log(products.join(';'));
+
+
+
+
+// lesson - 35 Передача по ссылке или по значению
+
+// let a = 5,
+// 	b = a;
+// b = b + 5;
+// console.log(b);
+// console.log(a);
+
+// Передача значение по ссылке
+// const obj = {
+// 	a: 5,
+// 	b: 1
+// };
+// const copy = obj;
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+
+
+// Поверхносная копия обьекта, во вложениях ссылка
+// function copy(mainObj){
+// 	let objCopy = {};
+// 	let key;
+// 	for (key in mainObj){
+// 		objCopy[key] = mainObj[key];
+// 	}
+// 	return objCopy;
+// }
+
+// const numbers = {
+// 	a:2,
+// 	b:5,
+// 	c:{
+// 		x:7,
+// 		y:4
+// 	}
+// };
+
+// const newNumbers = copy(numbers);
+// newNumbers.a = 10;
+// newNumbers.c.x = 10;
+// console.log(newNumbers);
+// console.log(numbers);
+
+
+// Соединение обьектов
+// const add = {
+// 	d:17,
+// 	e:20
+// };
+
+// console.log(Object.assign(numbers, add));
+
+// const clone = Object.assign({}, add);
+// clone.d = 20;
+// console.log(add);
+// console.log(clone);
+
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
+// newArray[1] = 'aaaaaaaaaaa';
+// console.log(newArray);
+// console.log(oldArray);
+
+
+// Оператор разворота
+const video = ['toutube', 'vimeo', 'rutube'],
+	blogs = ['woedpress', 'livejoournal', 'bloger'],
+	internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+
+function log(a, b, c){
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+}
+
+const num = [2, 3, 7];
+log(...num);
+
+
+const arry = ['a', 'b'];
+const newArry =  [...arry];
+console.log(newArry);
+
+const d = {
+	one:1,
+	two:2
+};
+const newD = {...d};
+console.log(newD);
