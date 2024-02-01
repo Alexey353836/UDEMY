@@ -1,73 +1,48 @@
 'use strict';
 
-// lesson 45. События и их обработчики
+// Lesson 46. Навигация по DOM - элементам, data-атрибуты, преимущество for/of
 
-// const btn1 = document.querySelector('button');
+// html
+// console.log(document.documentElement);
 
-// btn1.onclick = function() {
-//     alert('click');
-// };
+// head
+// console.log(document.head);
 
-// btn.addEventListener('click', () => {
-//     alert('click');
-// });
-// btn.addEventListener('click', () => {
-//     alert('second click');
-// });
+// body
+// console.log(document.body);
 
-// btn.addEventListener('mouseenter', () => {
-//     console.log('mouseenter');
-// });
+// childNodes Получить все ноды и все узлы родителя
+// console.log(document.body.childNodes);
 
-// btn.addEventListener('mouseenter', (e) => {
-// console.log(e);
-// console.log(e.target);
-// e.target.remove();
-// console.log('mouseenter');
-// });
+//  firstChild Получить первый элемент родителя
+// console.log(document.body.firstChild);
+// console.log(document.body.firstElementChild);
 
-// let i = 0;
-// const deletElement = (e) => {
-// 	console.log(e.target);
-// 	i++;
-// 	if (i == 2){
-// 		btn.removeEventListener('click', deletElement);
-// 	}   
-// };
-// btn.addEventListener('click', deletElement);
-
-// Всплытие
-// const overlay = document.querySelector('.overlay');
-// const deletElement = (e) => {
-// 	console.log(e.type);
-// 	console.log(e.currentTarget);
-// };
-// btn.addEventListener('click', deletElement);
-// overlay.addEventListener('click', deletElement);
-
-// Отменять стандартное поведение браузера
-// const link = document.querySelector('a');
-// link.addEventListener('click', (event) => {
-// 	event.preventDefault();
-// 	console.log(event.target);
-// });
-
-// Одинаковое действие приклике на разные элементы
-const btn = document.querySelectorAll('.btn');
-const btns = document.querySelectorAll('button');
-btns.forEach(item => {
-	item.addEventListener('click', () => {
-		btn.forEach(i => {
-			i.style.backgroundColor = 'red';
-		});
-		item.style.backgroundColor = 'blue';
-		console.log('elya');
-	});
-	// Опция once:
-	// ,{once: true}
-	// ,false
-	//  );
-});
+// lastChild Получить последний элемент родителя
+// console.log(document.body.lastChild);
+// console.log(document.body.lastElementChild);
 
 
+// Получение Родителя соседей и детей
+// console.log(document.querySelector('#current').parentNode);
+// console.log(document.querySelector('#current').parentElement);
+// console.log(document.querySelector('#current').parentNode.parentNode);
 
+
+//  data - ...   Дата атрибуты
+
+// nextSibling Получение следующего элемента
+// console.log(document.querySelector('[data-current="3"]').nextSibling);
+// console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+
+// nextSibling Получение ghtlsleituj элемента
+// console.log(document.querySelector('[data-current="3"]').previousSibling);
+// console.log(document.querySelector('[data-current="3"]').previousElementSibling);
+
+
+for (let node of document.body.childNodes ) {
+	if (node.nodeName == '#text') {
+		continue;
+	}
+	console.log(node);
+}
